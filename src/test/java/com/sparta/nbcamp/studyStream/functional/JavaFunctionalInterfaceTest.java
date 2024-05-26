@@ -47,7 +47,7 @@ public class JavaFunctionalInterfaceTest {
 
         // when
         Integer result = multiply3
-                .andThen(plus10)
+                .andThen(plus10)    // <- andThen 메서드 내부 return 값을 보면 일급 객체 특징 3번에 해당 (3.모든 일급 객체는 함수의 리턴값으로 사용할 수 있어야 한다.)
                 .apply(5);
 
         // then
